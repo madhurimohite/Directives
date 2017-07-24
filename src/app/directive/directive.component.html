@@ -1,0 +1,55 @@
+  
+  <div class="row">
+    <div class="col-md-12">
+      <h1>Attribute Directives</h1>
+     
+      <h2>ngStyle Example 
+      <input type="button" class="btn btn-primary" [ngStyle]="{'border':'1px solid red'}">
+            <input type="text" [ngStyle]="{'border':'1px solid red'}"></h2>
+
+
+     <div>
+       <h3 [ngClass]="{'name':a,'myBorder':b}">Welcome</h3>
+    </div>
+
+    <div>
+      <h2> Check ngClass</h2><br>
+
+     <input type="text" [ngClass]="{'myBorder': xyz, 'well' : pqr}">
+     <input type="button" (click)="otherFun()">
+   </div>
+    
+    <div>
+      <h2>Enter to check ngModel </h2><br>
+    <input type="text" name="fname" [(ngModel)]="name">
+    <h1>{{name}}</h1>
+    </div>
+    </div>
+  </div>
+
+  
+  
+<!--<app-directive></app-directive>-->
+
+<!--
+<div class="row">
+  <div class="col-md-12">
+   ngStyle Example <input type="text" [ngStyle]="{'border': '1px solid red'}">
+  </div>
+</div>
+
+   
+<div class="row">
+  <div class="col-md-12">
+    ngClass Example<br>
+    <input type="text" [ngClass]="{'myBorder': xyz, 'well' : pqr}">
+    <input type="button" value="Click It" (click)="otherFun()">
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <input type="text" sizer [size]="'300px'"><br>
+    <input type="text" [sizer]="'100px'"><br>
+     <input type="text" [sizer]="'400px'"><br>
+  </div>
+</div>-->
